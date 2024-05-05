@@ -1,21 +1,125 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayana Anirudh - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .contact-info, .experience {
+            flex: 0 0 45%;
+            margin-bottom: 20px;
+        }
+        .experience {
+            margin-right: 20px;
+        }
+        .education, .projects, .skills, .languages, .operating-systems {
+            margin-bottom: 40px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .center-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content">
+        <h1>Bayana Anirudh</h1>
+        <h3>Software Engineer</h3>
+    </div>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Phone: +91 - 8977123768<br>
+        Email: anirudh.bayana@gmail.com</p>
+        <p>4-30-13, Mr. Lakshman Rao Street, opp. Sai ram theater, chittinagar, Vijayawada<br>
+        Vijayawada, Andhra Pradesh, India, 520001.</p>
+    </div>
 
-<p>This is my first web page!!!</p>
+    <div class="experience">
+        <h2>Experience</h2>
+        <p><strong>Nacstergen AI, Bangalore— Software Engineer - Trainee</strong><br>
+        October 2022 - Feb 2024</p>
+        <ul>
+            <li>Developed and tested software to ensure the highest quality of product.</li>
+            <li>Performed troubleshooting and debugging of applications and programs for software systems.</li>
+            <li>Utilized various software development techniques and tools, such as Angular, TypeScript, and Rest API.</li>
+            <li>Expert in Excel and Access for data entry, manipulation, and analysis.</li>
+            <li>Utilized various software applications to input, analyze, and report findings.</li>
+        </ul>
+    </div>
 
-<p>My name is {{ first_name }}</p>
+    <div class="education">
+        <h2>Education</h2>
+        <p><strong>NRI Institute of Technology, Vijayawada, Andhra Pradesh— Bachelor of Technology in Electronics and Communication (ECE)</strong><br>
+        July 2018 - July 2022</p>
+        <p><strong>A. A. N. M. & V. V. R. S. R. Polytechnic, Gudlavalleru, Andhra Pradesh— Polytechnic (Diploma) in Electronics and communication (ECE)</strong><br>
+        August 2014 - June 2017</p>
+    </div>
 
-<p>{{ stuff | title }}</p>
+    <div class="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li><strong>iFieldScout</strong><br>
+                Currently engaged in the development of a comprehensive vehicle tracking and fleet management system, known as iFieldScout. The project encompasses real-time vehicle tracking and monitoring, including crucial vehicle details such as tire conditions, fuel levels, distance traveled, and more. The project emphasizes efficient fleet management solutions. Notably, Angular Material is employed to create a user-friendly and responsive user interface (UI) for the website.
+            </li>
+            <li><strong>Component and Error detection using AI</strong><br>
+                In this project, I assumed the responsibility of Data Collector and Data Validator, utilizing my expertise to ensure accurate and reliable data collection and validation.
+            </li>
+            <li><strong>STAGE</strong><br>
+                In this project, I successfully developed a responsive website using Angular in the front end and implemented REST APIs in the backend. This involved leveraging my skills in front-end development, backend integration, and ensuring seamless communication between the two layers.
+            </li>
+            <li><strong>Quantities Stats calculations</strong><br>
+                In this project, I utilized Python and JSON to perform data operations on CSV files. Specifically, I implemented functionality to calculate aggregations based on various time intervals such as daily, weekly, fortnightly, monthly, and yearly. Furthermore, I ensured the flexibility of the solution by making the necessary adjustments in the JSON file, enabling its seamless integration into diverse website applications including those in the banking and e-commerce domains.
+            </li>
+            <li><strong>A novel High speed Vedic multiplier incorporating with Brent Kung adder</strong><br>
+                In this project, I employed ancient techniques such as the Urdhva Tiryagbhyam sutra from Vedic mathematics to design a multiplier. The implementation utilized a parallel prefix adder known as the Brent Kung Adder. By leveraging these methodologies, I successfully developed a high-performance multiplier that incorporates the principles of ancient mathematics, showcasing the integration of traditional and modern mathematical concepts.
+            </li>
+            <li><strong>Soil Moisture Detector</strong><br>
+                In this project, I utilized sensors such as the ESP-8 and Arduino (UNO) Board to detect crucial environmental factors including humidity, soil moisture, and temperature. By leveraging these sensors and integrating them with a display board, I successfully developed a system that provides real-time data on these variables. This solution proves particularly beneficial for farmers as it enables them to accurately assess soil moisture levels, aiding in optimal crop cultivation and resource management.
+            </li>
+        </ol>
+    </div>
 
-<h3>Technologies:</h3>
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>Angular</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Rest API</li>
+            <li>Fast API</li>
+        </ul>
+    </div>
 
-{% for mine_skills in lists %}
-    {% if mine_skills is string %}
-        <p>{{ mine_skills }}</p>
-    {% else %}
-        <p>{{ mine_skills }}</p>
-    {% endif %}
-{% endfor %}
+    <div class="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>English - Proficient</li>
+            <li>Telugu - Expert</li>
+            <li>Tamil - Amateur</li>
+            <li>Hindi - Competent</li>
+        </ul>
+    </div>
 
-<br/>
-{{ lists[4] + 25 }}
-{{ lists.0|reverse}}
+    <div class="operating-systems">
+        <h2>Operating Systems</h2>
+        <ul>
+            <li>Windows</li>
+            <li>Linux</li>
+            <li>Mac OS</li>
+        </ul>
+    </div>
+</body>
+</html>
