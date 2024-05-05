@@ -1,0 +1,21 @@
+<h1>Hello World</h1>
+
+<p>This is my first web page!!!</p>
+
+<p>My name is {{ first_name }}</p>
+
+<p>{{ stuff | title }}</p>
+
+<h3>Technologies:</h3>
+
+{% for mine_skills in lists %}
+    {% if mine_skills is string %}
+        <p>{{ mine_skills }}</p>
+    {% else %}
+        <p>{{ mine_skills }}</p>
+    {% endif %}
+{% endfor %}
+
+<br/>
+{{ lists[4] + 25 }}
+{{ lists.0|reverse}}
